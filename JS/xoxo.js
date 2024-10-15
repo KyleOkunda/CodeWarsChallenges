@@ -19,11 +19,8 @@ function XO(str) {
     }
   }
   if (stro.length === strx.length) {
-    console.log(true);
     return true;
   } else {
-    console.log(false);
     return false;
   }
 }
-XO("XOxpxo");

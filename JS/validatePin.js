@@ -5,11 +5,8 @@
 function validatePIN(pin) {
   let intPin = +pin;
   if (Number.isInteger(intPin) && (pin.length === 4 || pin.length === 6)) {
-    console.log(true);
     return true;
   } else {
-    console.log(false);
     return false;
   }
 }
-validatePIN("1234");

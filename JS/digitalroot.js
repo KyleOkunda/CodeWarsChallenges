@@ -6,7 +6,7 @@
 function digitalRoot(n) {
   let stringNo = n.toString();
   if (stringNo.length === 1) {
-    console.log(stringNo[0]);
+    return stringNo[0];
   } else {
     //sumOfDigits();
     let sum = 0;
@@ -17,5 +17,3 @@ function digitalRoot(n) {
     digitalRoot(sum);
   }
 }
-
-digitalRoot(16);
