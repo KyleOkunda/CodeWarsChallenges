@@ -12,11 +12,8 @@ function validatePIN(pin) {
   }
 
   if (isValid && (pin.length === 4 || pin.length === 6)) {
-    console.log(true);
     return true;
   } else {
-    
     return false;
   }
 }
-validatePIN("a234");
