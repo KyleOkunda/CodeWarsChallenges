@@ -4,9 +4,19 @@
 
 function validatePIN(pin) {
   let intPin = +pin;
-  if (Number.isInteger(intPin) && (pin.length === 4 || pin.length === 6)) {
+  let isValid = null;
+  if (intPin > 0 && Number.isInteger(intPin)) {
+    isValid = true;
+  } else {
+    isValid = false;
+  }
+
+  if (isValid && (pin.length === 4 || pin.length === 6)) {
+    console.log(true);
     return true;
   } else {
+    
     return false;
   }
 }
+validatePIN("a234");
