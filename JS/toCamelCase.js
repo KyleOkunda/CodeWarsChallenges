@@ -1,3 +1,10 @@
+// the program should return a string in camel case(remove hyphens and underscores)
+// the first letter should be capital only if the original one was capital as well
+// the_stealth_warrior --> theStealthWarrior
+// the-stealth-warrior --> theStealthWarrior
+// The-stealth_warrior --> TheStealthWarrior
+// A-B-C --> ABC
+
 function toCamelCase(str) {
   var strArray = null;
   var newStr = "";
@@ -16,7 +23,6 @@ function toCamelCase(str) {
       break;
     }
     if (j == str.length - 1) {
-      console.log(str);
       return str;
     }
   }
@@ -27,7 +33,7 @@ function toCamelCase(str) {
     newStr = newStr + tempStr;
   }
 
-  newStr = `"` + strArray[0] + newStr + `"`;
+  newStr = strArray[0] + newStr;
   toCamelCase(newStr);
 }
 toCamelCase("the_stealth_warrior");
